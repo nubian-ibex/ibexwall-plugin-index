@@ -1,0 +1,11 @@
+# Generated from the plugin's manifest; do not edit by hand.
+id = "system.audit"
+name = "Security audit"
+description = "Shows the warnings and suggestions of Lynis when it is installed. IbexWall does not bundle or run it."
+category = "system"
+kinds = ["check"]
+version = "0.1.0"
+origin = "official"
+license = "GPL-3.0-or-later"
+repository = "https://github.com/nubian-ibex/ibexwall"
+maintainers = ["nubian-ibex"]

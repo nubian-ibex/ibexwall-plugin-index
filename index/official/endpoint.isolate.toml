@@ -1,0 +1,11 @@
+# Generated from the plugin's manifest; do not edit by hand.
+id = "endpoint.isolate"
+name = "Emergency mode"
+description = "Cuts the network except for the addresses you name, and is undone from History."
+category = "endpoint"
+kinds = ["check", "control"]
+version = "0.1.0"
+origin = "official"
+license = "GPL-3.0-or-later"
+repository = "https://github.com/nubian-ibex/ibexwall"
+maintainers = ["nubian-ibex"]

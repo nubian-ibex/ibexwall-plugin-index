@@ -1,0 +1,11 @@
+# Generated from the plugin's manifest; do not edit by hand.
+id = "system.session-lock"
+name = "Screen lock"
+description = "Checks that the desktop locks the screen by itself when you step away."
+category = "system"
+kinds = ["check"]
+version = "0.1.0"
+origin = "official"
+license = "GPL-3.0-or-later"
+repository = "https://github.com/nubian-ibex/ibexwall"
+maintainers = ["nubian-ibex"]

@@ -1,0 +1,29 @@
+# The index matches the app repository and every entry is well formed.
+name: ci
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+
+concurrency:
+  group: ${{ github.workflow }}-${{ github.ref }}
+  cancel-in-progress: true
+
+permissions: {}
+
+jobs:
+  check:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+        with:
+          path: plugin-index
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+        with:
+          repository: nubian-ibex/ibexwall
+          path: ibexwall
+      - run: node scripts/generate.mjs --check
+        working-directory: plugin-index
+      - run: node scripts/check.mjs
+        working-directory: plugin-index

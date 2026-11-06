@@ -1,0 +1,11 @@
+# Generated from the plugin's manifest; do not edit by hand.
+id = "apps.flatpak-network"
+name = "Flatpak network access"
+description = "Cuts the network access of a Flatpak app with a reversible override."
+category = "apps"
+kinds = ["check", "control"]
+version = "0.1.0"
+origin = "official"
+license = "GPL-3.0-or-later"
+repository = "https://github.com/nubian-ibex/ibexwall"
+maintainers = ["nubian-ibex"]

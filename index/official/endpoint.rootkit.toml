@@ -1,0 +1,11 @@
+# Generated from the plugin's manifest; do not edit by hand.
+id = "endpoint.rootkit"
+name = "Rootkit scan"
+description = "Runs rkhunter and chkrootkit, on demand or on a schedule, and reports what they flag. Their warnings need a person's review: they are not proof."
+category = "endpoint"
+kinds = ["check", "control"]
+version = "0.1.0"
+origin = "official"
+license = "GPL-3.0-or-later"
+repository = "https://github.com/nubian-ibex/ibexwall"
+maintainers = ["nubian-ibex"]

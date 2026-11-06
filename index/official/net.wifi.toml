@@ -1,0 +1,11 @@
+# Generated from the plugin's manifest; do not edit by hand.
+id = "net.wifi"
+name = "Wi-Fi privacy"
+description = "Checks that Wi-Fi uses a changed hardware address and that open networks are not remembered, and sets the address."
+category = "network"
+kinds = ["check", "control"]
+version = "0.1.0"
+origin = "official"
+license = "GPL-3.0-or-later"
+repository = "https://github.com/nubian-ibex/ibexwall"
+maintainers = ["nubian-ibex"]

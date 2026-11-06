@@ -1,0 +1,11 @@
+# Generated from the plugin's manifest; do not edit by hand.
+id = "net.exposure"
+name = "Open ports, seen with nmap"
+description = "Scans this computer's own addresses (never another machine) with nmap and lists which TCP ports answer, to compare with what you expect."
+category = "net"
+kinds = ["check", "control"]
+version = "0.1.0"
+origin = "official"
+license = "GPL-3.0-or-later"
+repository = "https://github.com/nubian-ibex/ibexwall"
+maintainers = ["nubian-ibex"]

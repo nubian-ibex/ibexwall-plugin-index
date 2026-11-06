@@ -1,0 +1,11 @@
+# Generated from the plugin's manifest; do not edit by hand.
+id = "apps.flatpak-perms"
+name = "Flatpak permissions"
+description = "Lists Flatpak apps that can reach your files, devices or the sandbox's own controls."
+category = "apps"
+kinds = ["check"]
+version = "0.1.0"
+origin = "official"
+license = "GPL-3.0-or-later"
+repository = "https://github.com/nubian-ibex/ibexwall"
+maintainers = ["nubian-ibex"]

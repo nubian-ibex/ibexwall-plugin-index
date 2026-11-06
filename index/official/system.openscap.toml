@@ -1,0 +1,11 @@
+# Generated from the plugin's manifest; do not edit by hand.
+id = "system.openscap"
+name = "Security profile check (OpenSCAP)"
+description = "Checks this computer against a published security profile (for example ANSSI or CIS) with OpenSCAP and lists the rules that fail. It changes nothing."
+category = "system"
+kinds = ["check", "control"]
+version = "0.1.0"
+origin = "official"
+license = "GPL-3.0-or-later"
+repository = "https://github.com/nubian-ibex/ibexwall"
+maintainers = ["nubian-ibex"]
