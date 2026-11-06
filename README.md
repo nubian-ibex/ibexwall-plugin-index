@@ -3,6 +3,10 @@
 
 # ibexwall-plugin-index
 
+[![CI](https://github.com/nubian-ibex/ibexwall-plugin-index/actions/workflows/ci.yml/badge.svg)](https://github.com/nubian-ibex/ibexwall-plugin-index/actions/workflows/ci.yml)
+[![License: GPL-3.0-or-later](https://img.shields.io/badge/license-GPL--3.0--or--later-blue.svg)](https://www.gnu.org/licenses/gpl-3.0.html)
+
+
 The index of IbexWall plugins: one file per plugin under `index/`, saying what
 it is, where its source lives and who maintains it. A person reads it to find a
 plugin; a tool reads it to know where to fetch one from. Listing a plugin here
