@@ -5,7 +5,7 @@
 // Every index entry parses as TOML, has the required fields, and its file name
 // is its id. No JSON Schema tool needed at review speed: the schema file is
 // the contract, this is the check that runs everywhere.
-import { readdirSync, readFileSync } from 'node:fs';
+import { existsSync, readdirSync, readFileSync } from 'node:fs';
 import { dirname, join } from 'node:path';
 import { fileURLToPath } from 'node:url';
 
@@ -28,7 +28,9 @@ const value = (raw) => {
 
 for (const group of ['official', 'community']) {
   const folder = join(root, 'index', group);
+  if (!existsSync(folder)) continue;
   for (const file of readdirSync(folder)) {
+    if (!file.endsWith('.toml')) continue;
     const path = join(folder, file);
     const entry = {};
     for (const line of readFileSync(path, 'utf8').split('\n')) {
